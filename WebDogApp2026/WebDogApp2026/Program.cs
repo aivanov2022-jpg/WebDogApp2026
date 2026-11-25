@@ -38,6 +38,7 @@ namespace WebDogApp2026
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddTransient<IBreedService, BreedService>();
+            builder.Services.AddTransient<IDogService, IDogService>();
 
             var app = builder.Build();
 
