@@ -2,7 +2,7 @@
 
 namespace WebDogApp2026.Models.Dog
 {
-    public class Details
+    public class DetailsVM
     {
         public int Id { get; set; }
 
