@@ -33,8 +33,59 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Dog" asp-action="Index">Index</a>
                         </li>
+                        <li class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle"
+                                    type="button"
+                                    id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Dog Breeds
+                            </button>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                                <li>
+                                    <a class="dropdown-item"
+                                       asp-controller="Dog"
+                                       asp-action="Index"
+                                       asp-route-SearchStringBreed="Husky">Husky</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item"
+                                       asp-controller="Dog"
+                                       asp-action="Index"
+                                       asp-route-SearchStringBreed="Pinscher">Pinscher</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item"
+                                       asp-controller="Dog"
+                                       asp-action="Index"
+                                       asp-route-SearchStringBreed="Cocker spaniel">Cocker spaniel</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item"
+                                       asp-controller="Dog"
+                                       asp-action="Index"
+                                       asp-route-SearchStringBreed="Dachshund">Dachshund</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item"
+                                       asp-controller="Dog"
+                                       asp-action="Index"
+                                       asp-route-SearchStringBreed="Doberman">Doberman</a>
+                                </li>
+
+                            </ul>
+                        </li>
                     </ul>
+
                     <partial name="_LoginPartial" />
+
+
                 </div>
             </div>
         </nav>
